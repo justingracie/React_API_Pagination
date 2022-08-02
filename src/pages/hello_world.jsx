@@ -29,7 +29,8 @@ export const HelloWorld = () =>{
                     {user.map((info, idx)=>{
                         return(
                             <div key={idx}>
-                                <p>{info.name.first} {info.name.last}</p>
+                                <p>{info.name.first} {info.name.last} <strong>Age:</strong> {info.dob.age} <strong>Location:</strong> {info.location.country} <strong>Gender:</strong> {info.gender}</p>
+
                             </div>
                         )
                     })}
