@@ -23,9 +23,9 @@ export const HelloWorld = () =>{
     return(
 
         <>
-            <h1>List of Users</h1>
+            <h1 className="body">List of Users:</h1>
             {user ? 
-                <div>
+                <div className="body">
                     {user.map((info, idx)=>{
                         return(
                             <div key={idx}>
